@@ -1,0 +1,386 @@
+ @viewport {
+  width: device-width;
+    zoom: 0.8;
+    min-zoom: 0.5;
+    max-zoom: 3;
+    user-zoom: fixed;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Original Surfer', cursive;
+    scroll-behavior: smooth;
+    
+
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background:white;
+    background-image: url(images/background.png);
+    
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+#logo{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: white;
+    border-radius: 20px;
+}
+header ul li a:hover{
+    background: white;
+    color: #2b1055;
+}
+
+#active
+{
+    background: white;
+    color: #2b1055;
+    border-radius: 20px;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* min-height: 100vh; */
+}
+section::before{
+    content:'';
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #ffb36e;
+    z-index: 100;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text{
+    position: absolute;
+    color: white;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    transform: translateY(100%);
+}
+#boat{
+    position: absolute;
+    left: -400px;
+    transform: translateY(30%);
+    
+}
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: white;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+.sec{
+    position: relative;
+    background: #ffb36e;
+}
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: 20px; 
+    text-align: center;
+}
+.sec p{
+    font-size: 1.2em;
+    color: white;
+
+}
+  button{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    left: 1200px;
+    top:25px;
+    display: inline-flex;
+    padding: 9px 20px;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff0e6;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #fd3535;
+    background: linear-gradient(147deg, #fe8a39  0%, #fd3838 74%);
+  }
+  button:hover{
+    background: linear-gradient(147deg, #fe791b 0%, #fd1c1c 74%);
+  }
+  
+  .card1{
+    position: absolute;
+    width: 1350px;
+    height: 100px;
+    left: 80px;
+    top: 210px;
+    padding: 0px;
+    background:lightblue;
+    border-radius: 48px;
+
+  }
+
+  .card1:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }  
+
+  .card2{
+    position: absolute;
+    width: 1350px;
+    height: 100px;
+    left: 80px;
+    top:320px;
+   
+    background:white;
+    border-radius: 48px;
+  }
+
+  .card2:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }  
+
+  .card3{
+    position: absolute;
+    width: 1350px;
+    height: 100px;
+    left: 80px;
+    top:440px;
+    
+    background:lightblue;
+    border-radius: 48px;
+  }
+
+  .card3:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }  
+
+  .card4{
+    position: absolute;
+    width: 1350px;
+    height: 100px;
+    left: 80px;
+    top:562px;
+   
+    background:white;
+    border-radius: 48px;
+  }
+
+  .card4:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }  
+  .card5{
+    position: absolute;
+    width: 1350px;
+    height: 100px;
+    left: 80px;
+    top:687px;
+
+    background:lightblue;
+    border-radius: 48px;
+  }
+
+  .card5:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }  
+
+  .card6{
+    position: absolute;
+    width: 1350px;
+    height: 100px;
+    left: 80px;
+    top:810px;
+    margin: 10px;
+    background:white;
+    border-radius: 48px;
+  }
+
+  .card6:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }  
+
+  .card7{
+    position: absolute;
+    width: 1350px;
+    height: 100px;
+    left: 80px;
+    top:94px;
+    /* margin: 10px; */
+    background:white;
+    border-radius: 48px;
+  }
+
+  .card7:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  }  
+
+  .crylogo{
+    position: absolute;
+    width: 208px;
+    height: 76px;
+    left:50px;
+    top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+    
+    color: #000000;
+    
+  }
+
+  .price{
+    position: absolute;
+width: 237px;
+height: 76px;
+left: 370px;
+top: 30px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 75px;
+
+color: #000000;
+
+  }
+  .pricesp{
+    position: absolute;
+    width: 208px;
+    height: 76px;
+    left: 370px;
+    top: -10px;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 75px;
+    
+    color: #8E8E8E;
+    
+  }
+
+  .market{
+    position: absolute;
+width: 578px;
+height: 76px;
+left: 570px;
+top: 30px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 75px;
+
+color: #000000
+    
+  }
+
+  .marksp{
+    position: absolute;
+    width: 341px;
+    height: 90px;
+    left: 570px;
+    top: -10px;
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 75px;
+    
+    color: #919191;
+  }
+
+  .vol{
+    position: absolute;
+width: 543px;
+height: 76px;
+left: 900px;
+top: 30px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 75px;
+
+color: #000000
+    
+  }
+
+  .volsp{
+    position: absolute;
+width: 252px;
+height: 76px;
+left: 900px;
+top: -10px;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 75px;
+
+color: #8F8F8F;
+    
+  }
